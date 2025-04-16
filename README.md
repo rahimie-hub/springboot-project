@@ -13,11 +13,14 @@
 4. **Problem 4** – secured JSON REST API  
    - **Controller:** `https://demo-spring-3b137cf374fa.herokuapp.com/api/product/1`  
 
-It also includes Swagger UI for interactive API exploration.
+   It also includes Swagger UI for interactive API exploration.
+---
+## LIVE-DEMO
 
+https://demo-spring-3b137cf374fa.herokuapp.com/swagger-ui/index.html
 ---
 
-## Prerequisites:
+## Prerequisites
 
 - **Java 21**  
 - **Maven**  
@@ -25,7 +28,7 @@ It also includes Swagger UI for interactive API exploration.
 
 ---
 
-## Clone & Build:
+## Clone & Build
 
 ```bash
 git clone https://github.com/rahimie-hub/springboot-project.git
