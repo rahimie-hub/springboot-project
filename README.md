@@ -1,33 +1,23 @@
 # Demo Spring Boot Application
 
-A Spring Boot backend that implements:
+## A Spring Boot backend that implements:
 
 1. **Problem 1** – compute a custom series term  
+   - **Controller:** `https://demo-spring-3b137cf374fa.herokuapp.com/test/series?n=1000`  
 2. **Problem 2** – process text replacing runs of “a”  
+   - **Controller:** `https://demo-spring-3b137cf374fa.herokuapp.com/test/text-process?input=abcdaabcdeabaaacbfaaaabcab`  
 3. **Problem 3** – login & product CRUD with hashed passwords and encrypted prices  
-4. **Problem 4** – secured JSON REST API for mobile
+   - **Controllers:**  
+     - `https://demo-spring-3b137cf374fa.herokuapp.com/auth/login?username=admin&password=admin`  
+     - `https://demo-spring-3b137cf374fa.herokuapp.com/products/add?name=tomato&price=10`  
+4. **Problem 4** – secured JSON REST API  
+   - **Controller:** `https://demo-spring-3b137cf374fa.herokuapp.com/api/product/1`  
 
 It also includes Swagger UI for interactive API exploration.
 
 ---
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)  
-2. [Clone & Build](#clone--build)  
-3. [Configuration (H2)](#configuration-h2)  
-4. [Run Locally](#run-locally)  
-5. [API Endpoints](#api-endpoints)  
-6. [Swagger UI](#swagger-ui)  
-7. [Push to GitHub](#push-to-github)  
-8. [Deploy to Heroku](#deploy-to-heroku)  
-9. [Switching to MySQL](#switching-to-mysql)  
-10. [Contributing](#contributing)  
-11. [License](#license)
-
----
-
-## Prerequisites
+## Prerequisites:
 
 - **Java 21**  
 - **Maven**  
@@ -35,9 +25,9 @@ It also includes Swagger UI for interactive API exploration.
 
 ---
 
-## Clone & Build
+## Clone & Build:
 
 ```bash
-git clone https://github.com/<your‑username>/demo-springboot.git
+git clone https://github.com/rahimie-hub/springboot-project.git
 cd demo-springboot
-mvn clean package -DskipTests
+mvn clean package -DskipTests 

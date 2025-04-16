@@ -27,7 +27,7 @@ public class ProductRestController {
      */
     @GetMapping("/product/{id}")
     public Object getProduct(@PathVariable Long id,
-                             @RequestHeader(defaultValue = "123456789",value = "X-API-KEY", required = false) String apiKey,
+                             @RequestHeader(defaultValue = "123456789",value = "X-API-KEY", required = true) String apiKey,
                              HttpServletResponse response) throws IOException {
         if (apiKey == null || !apiKey.equals(API_KEY)) {
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
